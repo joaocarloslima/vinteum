@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="557.0" prefWidth="615.0" spacing="20.0" style="-fx-background-color: #036d92;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Label fx:id="pontosMesa" text="Mesa" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+      </Label>
+      <HBox fx:id="mesaDoComputador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox fx:id="mesaDoJogador" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <Label fx:id="pontosJogador" layoutX="190.0" layoutY="30.0" text="Você" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="monte" fitHeight="95.0" fitWidth="77.0" onMouseClicked="#pedirCarta" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@classic-cards/BackVertical.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#parar" prefHeight="39.0" prefWidth="108.0" text="Parar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="279.0" layoutY="41.0" mnemonicParsing="false" onAction="#novoJogo" prefHeight="39.0" prefWidth="140.0" text="Novo jogo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="resultado" layoutX="292.0" layoutY="359.0" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
