@@ -24,11 +24,23 @@ public class PrimaryController {
     }
 
     public void atualizar(){
+        // pontosJogador.setText("Jogador: " + jogo.getJogador().getPontos());
+        // pontosMesa.setText("Mesa: " + jogo.getMesa().getPontos());
         
+        // mesaDoJogador.getChildren().clear();
+        // mesaDoComputador.getChildren().clear();
+
+        // jogo.getJogador().getMao().forEach((carta) -> mesaDoJogador.getChildren().add(imagemCarta(carta)));
+        // jogo.getMesa().getMao().forEach((carta) -> mesaDoComputador.getChildren().add(imagemCarta(carta)));
     }
 
     public void novoJogo(){
-
+        // jogo = new Jogo();
+        // mesaDoJogador.getChildren().clear();
+        // mesaDoComputador.getChildren().clear();
+        // pontosJogador.setText("Jogador: 0");
+        // pontosMesa.setText("Mesa: 0");
+        // resultado.setText("");
     }
 
     public void pedirCarta(){
