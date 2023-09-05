@@ -1,10 +1,6 @@
 package com.example;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -19,19 +15,21 @@ public class PrimaryController {
     @FXML private Label pontosJogador;
     @FXML private Label resultado;
 
+    // private Jogo jogo;
+
     public void turno(){
 
     }
 
     public void atualizar(){
-        // pontosJogador.setText("Jogador: " + jogo.getJogador().getPontos());
-        // pontosMesa.setText("Mesa: " + jogo.getMesa().getPontos());
+        // pontosJogador.setText("Jogador: " + jogo.jogador.getPontos());
+        // pontosMesa.setText("Mesa: " + jogo.computador.getPontos());
         
         // mesaDoJogador.getChildren().clear();
         // mesaDoComputador.getChildren().clear();
 
-        // jogo.getJogador().getMao().forEach((carta) -> mesaDoJogador.getChildren().add(imagemCarta(carta)));
-        // jogo.getMesa().getMao().forEach((carta) -> mesaDoComputador.getChildren().add(imagemCarta(carta)));
+        // jogo.jogador.getCartas().forEach((carta) -> mesaDoJogador.getChildren().add(imagemCarta(carta)));
+        // jogo.computador.getCartas().forEach((carta) -> mesaDoComputador.getChildren().add(imagemCarta(carta)));
     }
 
     public void novoJogo(){
@@ -44,11 +42,12 @@ public class PrimaryController {
     }
 
     public void pedirCarta(){
-
+       turno();
     }
 
     public void parar(){
-
+        // jogo.jogador.parar();
+        turno();
     }
     
 
